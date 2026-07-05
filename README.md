@@ -7,7 +7,7 @@ To validate database integrity, transaction logic, and cross-table relationships
 * **Orphan Record Identification:** Executed `LEFT JOIN` queries to identify registered users with missing or unlinked order data.
 * **Financial Math Validation:** Utilized `SUM()` and `GROUP BY` functions to aggregate and verify total revenue per customer against UI dashboard expectations.
 * **Security & Logic Verification:** Authored `INNER JOIN` queries to ensure suspended accounts cannot process completed transactions.
-
+* **Performance Optimization & Scaling:** Implemented non-clustered indexes (`CREATE INDEX`) and analyzed backend query metrics (`EXPLAIN ANALYZE`) to prevent bottlenecks on high-volume production datasets.
 ## 🗺️ Database Schema Architecture (ER Diagram)
 ```mermaid
 erDiagram
